@@ -1,0 +1,272 @@
+*{
+  margin: 1000;  
+  padding: 1000;}
+
+body{
+  width: 100vw;
+  height: 20vh;
+  display:flex;
+  justify-content:center;
+  align-items: center;}
+
+ .roof{
+  display:block;
+  background-color: rgba(0, 0, 0, 0.534);
+  width:300px;
+  height:100px;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%)}
+
+.chimney{
+  display:block;
+  background-color: rgb(175, 16, 16);
+  width:35px;
+  height:40px;
+  margin-left: 180px;}
+
+.walls{
+  display:block;
+  background-color: rgba(206, 136, 7, 0.897);
+  width:250px;
+  height:100px;
+  margin-left: 25px;
+  position:absolute;}
+
+.window1{
+  display:block;
+  background-color: aqua;
+  width:40px;
+  height:50px;
+  position:absolute;
+  top:155px;
+  left:50px;}
+      
+  .window2{
+    display:block;
+    background-color: aqua;
+    width:40px;
+    height:50px;
+    position:absolute;
+    top:155px;
+    left:210px;}
+
+  .door{
+    display:block;
+    background-color: rgba(0, 0, 0, 0.534);
+    width:50px;
+    height:70px;
+    position:absolute;
+    left:125px;
+    top:160px;}
+
+ .windows{
+  display:block;
+  background-color: rgba(0, 140, 255, 0.329);
+  width:200px;
+  height:100px;
+  position:absolute;
+  top:300px;
+  left:30px;
+  clip-path: polygon(10% 45%, 70% 45%, 100% 100%, 0% 100%);}
+
+.car-body{
+  display:block;
+  background-color: rgba(165, 7, 7, 0.719);
+  clip-path: polygon(10% 0%, 95% 0, 100% 100%, 0% 100%);
+  height:80px;
+  width:250px;
+  position:absolute;
+  top:400px;
+  left:0px;
+  border-radius: 10px;}
+
+.wheel1, .wheel2{
+  display:flex;
+  background-color:black;
+  clip-path: circle(50% at 50% 50%);
+  height:40px;
+  width: 40px;
+  top: 460px;
+  position:absolute;}
+.wheel1{
+  left:30px;}
+.wheel2{
+  left:170px;}
+
+.head{
+  display:flex;
+  position:absolute;
+  background-color: rgba(235, 179, 25, 0.671);
+  height:80px;
+  width:80px;
+  justify-content: center;
+  top:620px;
+  left:35px;
+  border-radius: 50px;
+  z-index:3;}
+
+.body{
+  display:block;
+  position:absolute;
+  background-color: greenyellow;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  width:150px;
+  height:200px;
+  top:700px;
+  z-index: 1;}
+
+  .left-eye, .right-eye{
+    display:block;
+    position:absolute;
+    background-color: rgba(0, 110, 255, 0.596);
+    height:10px;
+    width:10px;
+    top:650px;
+    border-radius: 50%;}
+
+  .left-eye{
+    left:90px;
+    z-index: 3;}
+  
+  .right-eye{
+    left:50px;
+    z-index:3;}
+
+  .mouth{
+    display:block;
+    position:absolute;
+    z-index:3;
+    width:30px;
+    height:15px;
+    border-radius:100%;
+    border-bottom:solid 3px red;
+    top:670px;
+    left:60px;  }
+
+    .left-leg, .right-leg{
+    display:block;
+    position:absolute;
+    height:100px;
+    width:20px;
+    background-color:rgba(235, 179, 25, 0.671);
+    top:880px;
+    border-radius: 20px;}
+
+    .left-leg{
+    left:90px;}
+    .right-leg{
+      left:45px;}
+
+    .left-arm, .right-arm{
+      display:block;
+      position:absolute;
+      height:120px;
+      width:20px;
+      background-color:rgba(235, 179, 25, 0.671);
+      top:720px;
+      border-radius: 20px;}
+    .left-arm{
+      transform:rotate(-40deg);
+      left:105px;}
+    .right-arm{
+      transform:rotate(40deg);
+      left:25px;}
+    
+    .teddy-head{
+      display:block;
+      position:absolute;
+      background-color: brown;
+      height:100px;
+      width:100px;
+      top:1200px;
+      border-radius: 50%;
+      align-items: center;
+      z-index:3;}
+
+    .teddy-body{
+      display:block;
+      position:absolute;
+      background-color: brown;
+      height:150px;
+      width:150px;
+      top:1290px;
+      border-radius: 50%;
+      left:-22px;}
+
+    .left-ear, .right-ear{
+      display:block;
+      position:absolute;
+      background-color: rgb(126, 86, 86);
+      height: 50px;
+      width:50px;
+      top:1190px;
+      border-radius: 50%;
+      z-index:1;}
+    .left-ear{
+      left:60px;}
+    .right-ear{
+      left:-10px;}
+
+    .teddy-left-arm, .teddy-right-arm{
+      display:block;
+      position:absolute;
+      background-color: rgb(126, 86, 86);
+      height:40px;
+      width:40px;
+      top:1300px;
+      border-radius: 50%;
+      z-index:2;}    
+    .teddy-left-arm{
+      left:90px;}    
+    .teddy-right-arm{
+      left:-25px;}
+
+    .teddy-left-leg, .teddy-right-leg{
+      display:block;
+      position:absolute;
+      background-color: rgb(126, 86, 86);
+      height: 50px;
+      width:50px;
+      top:1400px;
+      border-radius: 50%;
+      z-index:4;}
+    .teddy-left-leg{
+      left:60px;}    
+    .teddy-right-leg{
+      left:-10px;}
+
+    .teddy-left-eye, .teddy-right-eye{
+      display:block;
+      position:absolute;
+      background-color:black;
+      height:10px;
+      width:10px;
+      top:1230px;
+      border-radius: 50%;
+      z-index:5;}
+    .teddy-left-eye{
+      left:65px;}
+    .teddy-right-eye{
+      left:25px;}
+
+      .nose{
+        display:block;
+        position:absolute;
+        background-color:black;
+        height:10px;
+        width:10px;
+        top:1260px;
+        border-radius: 50%;
+        z-index:5;}
+        .nose{
+          left:45px;}
+
+      .teddy-face{
+      display:block;
+      position:absolute;
+      background-color: rgb(126, 86, 86);
+      height:45px;
+      width:45px;
+      top:1250px;
+      border-radius: 50%;
+      z-index:3;
+      left:28px;}
